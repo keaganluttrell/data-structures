@@ -44,70 +44,53 @@ public class LinkedList {
     }
 
     public Node get(int index) throws IndexOutOfBoundsException {
-        int j = 1;
-
         Node currentNode = head;
-        while (currentNode.getNext() != null && j != index) {
+
+        for (int j = 1; currentNode != null; j++) {
+            if (j == index) return currentNode;
             currentNode = currentNode.getNext();
-            j++;
         }
-
-        if (j != index) {
-            throw new IndexOutOfBoundsException("Index is more than the number of elements.");
-        }
-
-        return currentNode;
+        throw new IndexOutOfBoundsException("Index is more than the number of elements.");
     }
 
     public int contains(Node node) {
-        int j = 1;
-
         Node currentNode = head;
 
-        while (currentNode != null) {
-            if (currentNode == node) {
-                return j;
-            }
-
+        for (int index = 1; currentNode != null; index++) {
+            if (currentNode == node) return index;
             currentNode = currentNode.getNext();
-            j++;
         }
-
         return -1;
     }
 
     public void delete(Node node) {
-
         if (head == node) {
             head = head.getNext();
             return;
         }
-
         Node currentNode = head;
-
-        while (currentNode.getNext() != node && currentNode.getNext() != null) {
+        while (currentNode != null && currentNode.getNext() != null) {
+            if (currentNode.getNext() == node) {
+                currentNode.setNext(node.getNext());
+                return;
+            }
             currentNode = currentNode.getNext();
-        }
-
-        if (currentNode.getNext() == node) {
-            currentNode.setNext(node.getNext());
         }
     }
 
-    public void delete(int index) throws IndexOutOfBoundsException{
-        int j = 1;
-
+    public void delete(int index) throws IndexOutOfBoundsException {
+        if (isEmpty()) {
+            throw new IndexOutOfBoundsException("Index is more than the number of elements.");
+        }
         Node currentNode = head;
 
-        while(j != index && currentNode.getNext() != null) {
+        for (int j = 1; currentNode.getNext() != null; j++) {
+            if (j == index) {
+                delete(currentNode);
+                return;
+            }
             currentNode = currentNode.getNext();
-            j++;
         }
-        if(j != index) {
-            throw new IndexOutOfBoundsException("Index is more than the number of elements.");
-        } else if (j == index) {
-            delete(currentNode);
-        }
-
+        throw new IndexOutOfBoundsException("Index is more than the number of elements.");
     }
 }

@@ -2,7 +2,7 @@ com/dsags/NodeTest.java
  com.dsags.NodeTest
 com/dsags/queues/QueueTest.java
  com.dsags.queues.QueueTest
-com/dsags/linkedlist/LinkedListTest.java
- com.dsags.linkedlist.LinkedListTest
 com/dsags/stacks/StackTest.java
  com.dsags.stacks.StackTest
+com/dsags/linkedlist/LinkedListTest.java
+ com.dsags.linkedlist.LinkedListTest
