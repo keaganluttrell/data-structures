@@ -15,11 +15,10 @@ public class Queue {
 
     public void add(Object object) {
         Node newNode = new Node(object);
-        if (head == null) {
-            head = newNode;
-        } else {
-            tail.setNext(newNode);
-        }
+
+        if (head == null) head = newNode;
+        else tail.setNext(newNode);
+
         tail = newNode;
     }
 
@@ -49,6 +48,6 @@ public class Queue {
         if (head == null) {
             throw new NoSuchElementException("Cannot remove null value");
         }
-        return poll();
+        return peek();
     }
 }

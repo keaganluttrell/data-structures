@@ -49,9 +49,9 @@ public class QueueTest {
         freshQueue.add(1);
         assertEquals(1, freshQueue.remove());
 
-        NoSuchElementException exception = assertThrows(NoSuchElementException.class, () -> {
-            freshQueue.remove();
-        });
+        NoSuchElementException exception = assertThrows(
+                NoSuchElementException.class, () -> freshQueue.remove()
+        );
         assertEquals("Cannot remove null value", exception.getMessage());
     }
 
@@ -74,15 +74,16 @@ public class QueueTest {
 
     @Test
     void elementMethodShouldThrowExceptionForEmptyQueue() {
-        NoSuchElementException exception = assertThrows(NoSuchElementException.class, () -> {
-            freshQueue.element();
-        });
+        NoSuchElementException exception = assertThrows(
+                NoSuchElementException.class, () -> freshQueue.element()
+        );
         assertEquals("Cannot remove null value", exception.getMessage());
     }
 
     @Test
-    void elementMethodShouldReturnValueIfQueueIsNotEmpty() {
+    void elementMethodShouldReturnValueIfQueueIsNotEmptyButNotRemove() {
         freshQueue.add(9);
         assertEquals(9, freshQueue.element());
+        assertEquals(freshQueue.peek(), freshQueue.element());
     }
 }
