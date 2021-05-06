@@ -16,7 +16,10 @@ public class Stack {
         top = newTop;
     }
 
-    public Object peek() {
+    public Object peek() throws EmptyStackException {
+        if(empty()) {
+            throw new EmptyStackException("Cannot peek an empty stack");
+        }
         return top.getValue();
     }
 

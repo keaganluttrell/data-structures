@@ -6,7 +6,7 @@ com/dsags/App.java
  com.dsags.App
 com/dsags/stacks/EmptyStackException.java
  com.dsags.stacks.EmptyStackException
-com/dsags/stacks/Stack.java
- com.dsags.stacks.Stack
 com/dsags/linkedlist/LinkedList.java
  com.dsags.linkedlist.LinkedList
+com/dsags/stacks/Stack.java
+ com.dsags.stacks.Stack

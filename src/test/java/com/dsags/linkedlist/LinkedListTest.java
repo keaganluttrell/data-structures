@@ -20,6 +20,7 @@ public class LinkedListTest {
         assertTrue(list.isEmpty());
     }
 
+
     @Test
     void shouldBeAbleToAddNodeToEmptyListAsHead() {
         Node firstNode = new Node(1);
@@ -97,9 +98,8 @@ public class LinkedListTest {
         list.add(secondNode);
         list.add(thirdNode);
 
-        IndexOutOfBoundsException exception = assertThrows(IndexOutOfBoundsException.class, () -> {
-            list.get(4);
-        });
+        IndexOutOfBoundsException exception = assertThrows(
+                IndexOutOfBoundsException.class, () -> list.get(4));
 
         assertEquals("Index is more than the number of elements.", exception.getMessage());
     }
@@ -173,9 +173,9 @@ public class LinkedListTest {
         list.add(secondNode);
         list.add(thirdNode);
 
-        IndexOutOfBoundsException exception = assertThrows(IndexOutOfBoundsException.class, () -> {
-            list.delete(4);
-        });
+        IndexOutOfBoundsException exception = assertThrows(
+                IndexOutOfBoundsException.class, () -> list.delete(4)
+        );
 
         assertEquals("Index is more than the number of elements.", exception.getMessage());
     }

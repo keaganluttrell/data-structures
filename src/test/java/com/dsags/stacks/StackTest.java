@@ -29,14 +29,23 @@ public class StackTest {
     }
 
     @Test
-    void shouldPushNewValueToTopOfEmptyStack() {
+    void peekShouldThrowEmptyStackExceptionForEmptyStack() {
+        freshStack = new Stack();
+        EmptyStackException exception = assertThrows(
+                EmptyStackException.class, () -> freshStack.peek()
+        );
+        assertEquals("Cannot peek an empty stack", exception.getMessage());
+    }
+
+    @Test
+    void shouldPushNewValueToTopOfEmptyStack() throws EmptyStackException {
         freshStack.push(9);
         assertEquals(9, freshStack.peek());
         assertFalse(freshStack.empty());
     }
 
     @Test
-    void shouldPushNewValueToTopOfStack() {
+    void shouldPushNewValueToTopOfStack() throws EmptyStackException {
         freshStack.push(9);
         freshStack.push(10);
         assertEquals(10, freshStack.peek());
@@ -44,9 +53,9 @@ public class StackTest {
 
     @Test
     void popShouldThrowExceptionForEmptyStack() {
-        EmptyStackException exception = assertThrows(EmptyStackException.class, () -> {
-            freshStack.pop();
-        });
+        EmptyStackException exception = assertThrows(
+                EmptyStackException.class, () -> freshStack.pop()
+        );
         assertEquals("Cannot pop empty stack", exception.getMessage());
     }
 
