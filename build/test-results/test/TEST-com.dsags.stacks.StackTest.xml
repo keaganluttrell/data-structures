@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dsags.stacks.StackTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-05-08T23:45:30" hostname="Keagans-MBP" time="0.029">
+  <properties/>
+  <testcase name="shouldPushNewValueToTopOfEmptyStack()" classname="com.dsags.stacks.StackTest" time="0.018"/>
+  <testcase name="peekShouldThrowEmptyStackExceptionForEmptyStack()" classname="com.dsags.stacks.StackTest" time="0.001"/>
+  <testcase name="searchShouldReturnOneBasedIndexIfFound()" classname="com.dsags.stacks.StackTest" time="0.001"/>
+  <testcase name="searchShouldReturnNegativeOneIfStackIsEmpty()" classname="com.dsags.stacks.StackTest" time="0.001"/>
+  <testcase name="shouldPushNewValueToTopOfStack()" classname="com.dsags.stacks.StackTest" time="0.0"/>
+  <testcase name="searchShouldReturnNegativeOneForMissingObject()" classname="com.dsags.stacks.StackTest" time="0.001"/>
+  <testcase name="stackShouldStartEmpty()" classname="com.dsags.stacks.StackTest" time="0.001"/>
+  <testcase name="popShouldThrowExceptionForEmptyStack()" classname="com.dsags.stacks.StackTest" time="0.001"/>
+  <testcase name="shouldPopValueOffTopOfStackAndReturnValue()" classname="com.dsags.stacks.StackTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
