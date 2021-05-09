@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.dsags.linkedlist.LinkedListTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2021-05-08T23:45:30" hostname="Keagans-MBP" time="0.017">
+<testsuite name="com.dsags.linkedlist.LinkedListTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2021-05-09T01:36:50" hostname="Keagans-MBP" time="0.011">
   <properties/>
-  <testcase name="shouldBeAbleToAddNodeToEmptyListAsHead()" classname="com.dsags.linkedlist.LinkedListTest" time="0.001"/>
+  <testcase name="shouldBeAbleToAddNodeToEmptyListAsHead()" classname="com.dsags.linkedlist.LinkedListTest" time="0.0"/>
   <testcase name="shouldGetEndOfExistingList()" classname="com.dsags.linkedlist.LinkedListTest" time="0.0"/>
-  <testcase name="shouldAddToTheStartOfExistingList()" classname="com.dsags.linkedlist.LinkedListTest" time="0.0"/>
-  <testcase name="getNthItemInListException()" classname="com.dsags.linkedlist.LinkedListTest" time="0.0"/>
+  <testcase name="shouldAddToTheStartOfExistingList()" classname="com.dsags.linkedlist.LinkedListTest" time="0.001"/>
+  <testcase name="getNthItemInListException()" classname="com.dsags.linkedlist.LinkedListTest" time="0.001"/>
   <testcase name="returnsIndexOfObjectIfExists()" classname="com.dsags.linkedlist.LinkedListTest" time="0.001"/>
   <testcase name="newLinkedListShouldBeEmpty()" classname="com.dsags.linkedlist.LinkedListTest" time="0.0"/>
-  <testcase name="deleteObjectIfExists()" classname="com.dsags.linkedlist.LinkedListTest" time="0.001"/>
+  <testcase name="deleteObjectIfExists()" classname="com.dsags.linkedlist.LinkedListTest" time="0.0"/>
   <testcase name="shouldGetLastWhenListIsEmpty()" classname="com.dsags.linkedlist.LinkedListTest" time="0.001"/>
   <testcase name="deletesNthObjectFromListException()" classname="com.dsags.linkedlist.LinkedListTest" time="0.001"/>
-  <testcase name="shouldAddToTheStartOfEmptyList()" classname="com.dsags.linkedlist.LinkedListTest" time="0.001"/>
-  <testcase name="shouldDeleteLastNode()" classname="com.dsags.linkedlist.LinkedListTest" time="0.001"/>
-  <testcase name="shouldAddToEndOfExistingList()" classname="com.dsags.linkedlist.LinkedListTest" time="0.001"/>
+  <testcase name="shouldAddToTheStartOfEmptyList()" classname="com.dsags.linkedlist.LinkedListTest" time="0.0"/>
+  <testcase name="shouldDeleteLastNode()" classname="com.dsags.linkedlist.LinkedListTest" time="0.0"/>
+  <testcase name="shouldAddToEndOfExistingList()" classname="com.dsags.linkedlist.LinkedListTest" time="0.0"/>
   <testcase name="shouldDeleteHead()" classname="com.dsags.linkedlist.LinkedListTest" time="0.0"/>
-  <testcase name="getNthItemInList()" classname="com.dsags.linkedlist.LinkedListTest" time="0.0"/>
-  <testcase name="deletesNthObjectFromList()" classname="com.dsags.linkedlist.LinkedListTest" time="0.001"/>
+  <testcase name="getNthItemInList()" classname="com.dsags.linkedlist.LinkedListTest" time="0.001"/>
+  <testcase name="deletesNthObjectFromList()" classname="com.dsags.linkedlist.LinkedListTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

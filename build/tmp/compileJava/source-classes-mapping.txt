@@ -10,3 +10,5 @@ com/dsags/stacks/Stack.java
  com.dsags.stacks.Stack
 com/dsags/queues/Queue.java
  com.dsags.queues.Queue
+com/dsags/heaps/MinHeap.java
+ com.dsags.heaps.MinHeap
