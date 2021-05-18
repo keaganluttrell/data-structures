@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.dsags.NodeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-18T17:43:09" hostname="Keagans-MBP" time="0.001">
-  <properties/>
-  <testcase name="nodeShouldBeAbleToSetANextProperty()" classname="com.dsags.NodeTest" time="0.0"/>
-  <testcase name="nodeShouldHaveAnObjectPropertyAndNextProperty()" classname="com.dsags.NodeTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

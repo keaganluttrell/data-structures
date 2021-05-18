@@ -12,3 +12,5 @@ com/dsags/queues/Queue.java
  com.dsags.queues.Queue
 com/dsags/heaps/MinHeap.java
  com.dsags.heaps.MinHeap
+com/dsags/sorts/Sort.java
+ com.dsags.sorts.Sort

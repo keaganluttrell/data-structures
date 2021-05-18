@@ -8,3 +8,5 @@ com/dsags/queues/QueueTest.java
  com.dsags.queues.QueueTest
 com/dsags/heaps/MinHeapTest.java
  com.dsags.heaps.MinHeapTest
+com/dsags/sorts/SortTest.java
+ com.dsags.sorts.SortTest
