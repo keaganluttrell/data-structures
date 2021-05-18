@@ -25,6 +25,17 @@ public class SortTest {
     }
 
     @Test
+    void quicksort_null_exception() {
+        assertThrows(NullPointerException.class, () -> Sort.quicksort(null));
+    }
+
+    @Test
+    void quicksort_emptyArray_exception() {
+        EmptyArrayException e = assertThrows(EmptyArrayException.class, () -> Sort.quicksort(new int[0]));
+        assertEquals("Cannot sort empty array", e.getMessage());
+    }
+
+    @Test
     void quicksort_UnsortedArray_SortsArray() {
         Sort.quicksort(numbers);
         assertArrayEquals(sorted, numbers);

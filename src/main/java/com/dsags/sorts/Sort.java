@@ -3,6 +3,7 @@ package com.dsags.sorts;
 public class Sort {
 
     public static void quicksort(int[] array) {
+        if(array.length == 0) throw new EmptyArrayException("Cannot sort empty array");
         quicksort(array, 0, array.length - 1);
     }
 
