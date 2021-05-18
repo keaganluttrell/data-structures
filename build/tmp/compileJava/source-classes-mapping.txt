@@ -8,11 +8,11 @@ com/dsags/linkedlist/LinkedList.java
  com.dsags.linkedlist.LinkedList
 com/dsags/queues/Queue.java
  com.dsags.queues.Queue
-com/dsags/sorts/Sort.java
- com.dsags.sorts.Sort
+com/dsags/stacks/Stack.java
+ com.dsags.stacks.Stack
 com/dsags/App.java
  com.dsags.App
 com/dsags/stacks/EmptyStackException.java
  com.dsags.stacks.EmptyStackException
-com/dsags/stacks/Stack.java
- com.dsags.stacks.Stack
+com/dsags/sorts/Sort.java
+ com.dsags.sorts.Sort
